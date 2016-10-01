@@ -10,6 +10,9 @@ from django.http import HttpResponse
 from django.views import generic
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
+import json
+from fuzzywuzzy import process
+
 # Create your views here.
 
 PAGE_ACCESS_TOKEN = 'EAAZAg3eueoxUBAAdTsps670ekn6haHMS7kH0RVZBCsztWhkjuZBYJ60jQ318lv0PAXJHagBN6CHrhOWWf3pMHrC6p7LI7jnHAIAVY6P26BfX5d6JIp5oZC7tAmJLBnP9bQ6DxnujWu0Gr15Xvnq8vFT2mZBmgJwaHJRleH6nNWQZDZD'
@@ -26,16 +29,33 @@ def set_greeting_text():
     status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=greeting_object)
     pprint(status.json())
 
+def faq_search(search_string ='order'):
+    with open('faq.json') as data_file:    
+        data = json.load(data_file)
+
+    arr = []
+    for k,v in data['FAQ'].iteritems():
+        for i in v:
+            for k1,v1 in i.iteritems():
+                arr.append(v1)
+    
+    result_arr = process.extract(search_string, arr, limit=2)
+    result_arr = [i[0].split(':')[-1] for i in result_arr]
+    return result_arr[0]
+
+
 def index(request):
     #set_greeting_text()
     post_facebook_message('100006427286608','mango')
-    return HttpResponse('Hello World',content_type='application/json')
+    output_content = faq_search()
+    return HttpResponse(output_content, content_type='application/json')
 
 def post_facebook_message(fbid, recevied_message):
     post_message_url = 'https://graph.facebook.com/v2.6/me/messages?access_token=%s'%PAGE_ACCESS_TOKEN
     recevied_message = re.sub(r"[^a-zA-Z0-9\s]",' ',recevied_message).lower()
     
-    response_text = recevied_message
+    response_text = faq_search(search_string=recevied_message)
+
     response_msg = json.dumps({"recipient":{"id":fbid}, "message":{"text":response_text}})
     status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg)
 
