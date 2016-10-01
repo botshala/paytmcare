@@ -38,10 +38,50 @@ def faq_search(search_string ='order'):
         for i in v:
             for k1,v1 in i.iteritems():
                 arr.append(v1)
-    
+
     result_arr = process.extract(search_string, arr, limit=2)
     result_arr = [i[0].split(':')[-1] for i in result_arr]
     return result_arr[0]
+
+def gen_array_response(fbid,item_arr):
+    elements_arr = []
+    for item in item_arr:
+        button_arr = []
+        for button in item['buttons']:
+            button_item = {
+                            "type":button['type'],
+                            "url":button['url'],
+                            "title":button['title']
+                          }
+            button_arr.append(button_item)
+
+        sub_item = {
+                        "title":i['title'],
+                        "item_url":i['url'],
+                        "image_url":i['image_url'],
+                        "subtitle":i['subtitle'],
+                        "buttons":button_arr
+                    }
+
+        elements_arr.append(sub_item)
+
+    response_msg_generic = {
+
+            "recipient":{
+                "id":fbid
+              },
+              "message":{
+                "attachment":{
+                  "type":"template",
+                  "payload":{
+                    "template_type":"generic",
+                    "elements":elements_arr
+                  }
+                }
+              }
+    }
+
+    return response_msg_generic
 
 
 def index(request):
