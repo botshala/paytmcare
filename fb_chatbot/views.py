@@ -36,7 +36,6 @@ def get_offer_object(fbid):
     spread_arr = scrape_spreadsheet()
     item_arr =[]
     for i in spread_arr:
-        print i
         d = {}
         #underscrores will get removed from key names
         d['title'] = i['itemname']
@@ -67,10 +66,9 @@ def scrape_spreadsheet():
         d = {}
         for k,v in entry.iteritems():
             if k.startswith('gsx'):
-                print k
                 key_name = k.split('$')[-1]
                 d[key_name] = entry[k]['$t']
-        print d
+        #print d
         arr.append(d)
     print arr    
     return arr
