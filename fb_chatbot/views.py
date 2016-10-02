@@ -21,6 +21,59 @@ VERIFY_TOKEN = '8447789934m'
 def logg(mess,meta='log',symbol='#'):
   print '%s\n%s\n%s'%(symbol*20,mess,symbol*20)
 
+def index(request):
+    #set_greeting_text()
+    post_facebook_message('100006427286608','mango')
+    output_content = faq_search()
+    #scrape_spreadsheet()
+
+    output_content = get_offer_object('fbid')
+    logg(output_content,symbol='^**^')
+    return HttpResponse(output_content, content_type='application/json')
+
+
+def get_offer_object(fbid):
+    spread_arr = scrape_spreadsheet()
+    item_arr =[]
+    for i in spread_arr:
+        print i
+        d = {}
+        #underscrores will get removed from key names
+        d['title'] = i['itemname']
+        d['item_url'] = i['itemlink']
+        d['image_url'] = i['itempicture']
+        d['subtitle'] = i['itemdescription']
+        d['buttons'] = []
+        d['buttons'].append( dict(type='web_url',url=i['itemlink'],title='Claim Offer') )
+        item_arr.append(d)
+
+    output_content = gen_array_response('fbid',item_arr)
+    return output_content
+
+def scrape_spreadsheet():
+    offer_sheet_id = '1US5eDiy_oJkPyyvOFR8RKZCmaq2PMkPF7vgcEWloq3Y'
+    event_sheet_id = '1Pp67pJId2WZzBXOx8qWT9fwW0F0rpx7R48gEzxp6pmI'
+    newsletter_sheet_id = '1L9bfH89agYGdkBA0EQmM5e4phiOoHJTVfw4TZSa74e8'
+
+    sheet_id = offer_sheet_id
+    column_names = 'item_name,item_picture,item_description,item_link,item_type'
+
+    url = 'https://spreadsheets.google.com/feeds/list/%s/od6/public/values?alt=json'%(sheet_id)
+
+    resp = requests.get(url=url)
+    data = json.loads(resp.text)
+    arr =[]
+    for entry in data['feed']['entry']:
+        d = {}
+        for k,v in entry.iteritems():
+            if k.startswith('gsx'):
+                print k
+                key_name = k.split('$')[-1]
+                d[key_name] = entry[k]['$t']
+        print d
+        arr.append(d)
+    print arr    
+    return arr
 
 def set_greeting_text():
     post_message_url = "https://graph.facebook.com/v2.6/me/thread_settings?access_token=%s"%PAGE_ACCESS_TOKEN
@@ -44,10 +97,13 @@ def faq_search(search_string ='order'):
     return result_arr[0]
 
 def gen_array_response(fbid,item_arr):
+    if not item_arr:
+        item_arr = []
+
     elements_arr = []
-    for item in item_arr:
+    for i in item_arr:
         button_arr = []
-        for button in item['buttons']:
+        for button in i['buttons']:
             button_item = {
                             "type":button['type'],
                             "url":button['url'],
@@ -57,7 +113,7 @@ def gen_array_response(fbid,item_arr):
 
         sub_item = {
                         "title":i['title'],
-                        "item_url":i['url'],
+                        "item_url":i['item_url'],
                         "image_url":i['image_url'],
                         "subtitle":i['subtitle'],
                         "buttons":button_arr
@@ -84,12 +140,6 @@ def gen_array_response(fbid,item_arr):
     return response_msg_generic
 
 
-def index(request):
-    #set_greeting_text()
-    post_facebook_message('100006427286608','mango')
-    output_content = faq_search()
-    return HttpResponse(output_content, content_type='application/json')
-
 def post_facebook_message(fbid, recevied_message):
     post_message_url = 'https://graph.facebook.com/v2.6/me/messages?access_token=%s'%PAGE_ACCESS_TOKEN
     recevied_message = re.sub(r"[^a-zA-Z0-9\s]",' ',recevied_message).lower()
@@ -97,6 +147,7 @@ def post_facebook_message(fbid, recevied_message):
     response_text = faq_search(search_string=recevied_message)
 
     response_msg = json.dumps({"recipient":{"id":fbid}, "message":{"text":response_text}})
+    response_msg = get_offer_object(fbid)
     status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg)
 
 class BotView(generic.View):
