@@ -291,7 +291,7 @@ def handle_postback(fbid,payload):
         post_facebook_message(fbid,'offers')
 
     elif payload == 'DOWNLOAD':
-        response_msg = {
+        response_object = {
 
                 "recipient":{
                     "id":fbid
