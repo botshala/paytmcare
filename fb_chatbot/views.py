@@ -23,6 +23,7 @@ def logg(mess,meta='log',symbol='#'):
 
 def index(request):
     #set_greeting_text()
+    handle_postback('asdasd','asd')
     whitelist_domain()
     set_persistent_menu()
     post_facebook_message('100006427286608','mango')
@@ -92,24 +93,32 @@ def set_persistent_menu():
                 {
                     "type":"postback",
                     "title":"Help",
-                    "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_HELP"
+                    "payload":"HELP"
                 },
                 {
                     "type":"postback",
-                    "title":"Start a New Order",
-                    "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_START_ORDER"
+                    "title":"Call a human",
+                    "payload":"CALL_US"
                 },
                 {
-                    "type":"web_url",
-                    "title":"Checkout",
-                    "url":"https://github.com",
-                    "webview_height_ratio": "full",
-                    "messenger_extensions": True
+                    "type":"postback",
+                    "title":"Offers & Coupons",
+                    "payload":"OFFERS"
                 },
                 {
-                    "type":"web_url",
-                    "title":"View Website",
-                    "url":"http://petersapparel.parseapp.com/"
+                    "type":"postback",
+                    "title":"News",
+                    "payload":"NEWS"
+                },
+                {
+                    "type":"postback",
+                    "title":"Download App",
+                    "payload":"DOWNLOAD"
+                },
+                {
+                    "type":"postback",
+                    "title":"About PayTM",
+                    "payload":"ABOUT"
                 }
             ]
     }
@@ -250,6 +259,49 @@ def post_facebook_message(fbid, recevied_message):
 
     status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg)
 
+
+def handle_postback(fbid,payload):
+    post_message_url = 'https://graph.facebook.com/v2.6/me/messages?access_token=%s'%PAGE_ACCESS_TOKEN
+    output_text = 'Payload Recieved: ' + payload
+    logg(payload,symbol='*')
+    response_text = ''
+    response_object = ''
+    
+    if payload == 'HELP':
+        response_text = 'HELP'
+    elif payload == 'CALL_US':
+         
+        response_object={
+                          "recipient":{
+                            "id":fbid
+                          },
+                          "message":{
+                            "attachment":{
+                              "type":"template",
+                              "payload":{
+                                "template_type":"button",
+                                "text":"Need further assistance ?",
+                                "buttons":[
+                                  {
+                                            "type":"phone_number",
+                                            "title":"Call our toll free number",
+                                            "payload":"01203062244"
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+
+    if response_text:
+        response_object = json.dumps({"recipient":{"id":fbid}, "message":{"text":response_text}})
+    else:
+        response_object = json.dumps(response_object)
+
+    requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_object)
+    return
+
+
 class BotView(generic.View):
     def get(self, request, *args, **kwargs):
         if self.request.GET['hub.verify_token'] == VERIFY_TOKEN:
@@ -269,7 +321,15 @@ class BotView(generic.View):
 
         for entry in incoming_message['entry']:
             for message in entry['messaging']:
-                
+                try:
+                    if 'postback' in message:
+                        handle_postback(message['sender']['id'],message['postback']['payload'])
+                        return HttpResponse()
+                    else:
+                        pass
+                except Exception as e:
+                    logg(e,symbol='-315-')
+
                 try:
                     sender_id = message['sender']['id']
                     message_text = message['message']['text']
