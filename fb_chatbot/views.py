@@ -287,6 +287,62 @@ def handle_postback(fbid,payload):
                             }
                           }
                         }
+    elif payload == 'OFFERS':
+        post_facebook_message(fbid,'offers')
+
+    elif payload == 'DOWNLOAD':
+        response_msg = {
+
+                "recipient":{
+                    "id":fbid
+                  },
+                  "message":{
+                    "attachment":{
+                      "type":"template",
+                      "payload":{
+                        "template_type":"generic",
+                        "elements":[
+                          {
+                            "title":'Download PayTM app',
+                            "image_url":'https://lh5.ggpht.com/QODLrHuQBnWmDSVd4hSVWCFyCaiyilExf6nvdEKuugcCLh9tNOl7uVxTFffVKrHatpHs=w300-rw',
+                            "subtitle":"#PaytmKaro for the fastest online recharge, bill & utility payment and online shopping experience. Quick, easy and secure",
+                            "buttons":[
+                              {
+                                "type":"web_url",
+                                "url":'https://play.google.com/store/apps/details?id=net.one97.paytm&hl=en',
+                                "title":"Android"
+                              },
+                              {
+                                "type":"web_url",
+                                "url":'https://itunes.apple.com/us/app/recharge-bill-payment-wallet/id473941634?mt=8',
+                                "title":"iPhone"
+                              }         
+                            ]
+                          },
+                          {
+                            "title":'PayTM Seller app',
+                            "image_url":'https://lh3.googleusercontent.com/9H7pVuBIaiGkqlq2-e41qPOUy-74AsYIiBSOHmZFLI9dzQ5PFQPRx9y0KM70hp6v5g=w300-rw',
+                            "subtitle":"Paytm Seller app lets you become a seller in few easy steps, manage product listings and process orders on the go",
+                            "buttons":[
+                              {
+                                "type":"web_url",
+                                "url":'https://play.google.com/store/apps/details?id=com.paytm.merchants&hl=en',
+                                "title":"Android"
+                              },
+                              {
+                                "type":"web_url",
+                                "url":'https://itunes.apple.com/in/app/paytm-seller/id1142583481?mt=8',
+                                "title":"iPhone"
+                              }         
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  }
+
+        }
+
 
     if response_text:
         response_object = json.dumps({"recipient":{"id":fbid}, "message":{"text":response_text}})
