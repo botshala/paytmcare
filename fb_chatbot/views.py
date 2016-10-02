@@ -32,7 +32,25 @@ def index(request):
 
     output_content = get_offer_object('fbid')
     logg(output_content,symbol='^**^')
+    output_content = scrape_spreadsheet(sheet_type='newsletter1')
     return HttpResponse(output_content, content_type='application/json')
+
+def get_newsletter_object(fbid):
+    spread_arr = scrape_spreadsheet()
+    item_arr =[]
+    for i in spread_arr:
+        d = {}
+        #underscrores will get removed from key names
+        d['title'] = i['title']
+        d['item_url'] = 'https://paytm.com'
+        d['image_url'] = i['images']
+        d['subtitle'] = i['description']
+        d['buttons'] = []
+        d['buttons'].append( dict(type='web_url',url="https://paytm.com",title='Claim Offer') )
+        item_arr.append(d)
+
+    output_content = gen_array_response(fbid,item_arr)
+    return json.dumps(output_content)
 
 
 def get_offer_object(fbid):
@@ -52,13 +70,15 @@ def get_offer_object(fbid):
     output_content = gen_array_response(fbid,item_arr)
     return json.dumps(output_content)
 
-def scrape_spreadsheet():
+def scrape_spreadsheet(sheet_type='offers'):
     offer_sheet_id = '1US5eDiy_oJkPyyvOFR8RKZCmaq2PMkPF7vgcEWloq3Y'
     event_sheet_id = '1Pp67pJId2WZzBXOx8qWT9fwW0F0rpx7R48gEzxp6pmI'
     newsletter_sheet_id = '1L9bfH89agYGdkBA0EQmM5e4phiOoHJTVfw4TZSa74e8'
 
-    sheet_id = offer_sheet_id
-    column_names = 'item_name,item_picture,item_description,item_link,item_type'
+    if sheet_type == 'offers':
+        sheet_id = offer_sheet_id
+    else:
+        sheet_id = newsletter_sheet_id
 
     url = 'https://spreadsheets.google.com/feeds/list/%s/od6/public/values?alt=json'%(sheet_id)
 
@@ -92,7 +112,7 @@ def set_persistent_menu():
             "call_to_actions":[
                 {
                     "type":"postback",
-                    "title":"Help",
+                    "title":"PayTM Login",
                     "payload":"HELP"
                 },
                 {
@@ -251,6 +271,9 @@ def post_facebook_message(fbid, recevied_message):
 
     if recevied_message in 'offers,offer,cashback,coupons'.split(','):
         response_msg = get_offer_object(fbid)
+
+    if recevied_message in 'news,newsletter'.split(','):
+        response_msg = get_newsletter_object(fbid)
 
     status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg)
 
