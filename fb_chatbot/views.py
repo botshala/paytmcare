@@ -84,6 +84,10 @@ def faq_search(search_string ='order'):
     with open('faq.json') as data_file:    
         data = json.load(data_file)
 
+    for k,v in data['one_word_query'][0].iteritems():
+        if search_string in k.lower():
+            return v
+
     arr = []
     for k,v in data['FAQ'].iteritems():
         for i in v:
@@ -142,9 +146,48 @@ def post_facebook_message(fbid, recevied_message):
     post_message_url = 'https://graph.facebook.com/v2.6/me/messages?access_token=%s'%PAGE_ACCESS_TOKEN
     recevied_message = re.sub(r"[^a-zA-Z0-9\s]",' ',recevied_message).lower()
     
-    response_text = faq_search(search_string=recevied_message)
+    if len(recevied_message) < 4:
+        response_text = 'Could not understand that :('
+    else:        
+        response_text = faq_search(search_string=recevied_message)
 
-    response_msg = json.dumps({"recipient":{"id":fbid}, "message":{"text":response_text}})
+    if type(response_text) == dict:
+        response_msg_image = {
+
+                "recipient":{
+                    "id":fbid
+                  },
+                  "message":{
+                    "attachment":{
+                      "type":"template",
+                      "payload":{
+                        "template_type":"generic",
+                        "elements":[
+                          {
+                            "title":response_text['title'],
+                            "item_url":response_text['link'],
+                            "image_url":response_text['images'],
+                            "subtitle":response_text['description'],
+                            "buttons":[
+                              {
+                                "type":"web_url",
+                                "url":response_text['link'],
+                                "title":"Go to paytm"
+                              },  
+                              {
+                                "type":"element_share"
+                              }         
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  }
+
+        }
+
+    else:
+        response_msg = json.dumps({"recipient":{"id":fbid}, "message":{"text":response_text}})
 
     if recevied_message in 'offers,offer,cashback,coupons'.split(','):
         response_msg = get_offer_object(fbid)
