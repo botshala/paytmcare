@@ -1,152 +1,151 @@
-{ 
-    "one_word_query": [
+{
+  "FAQ": {
+  	"one_word_query": [
       {
         "Mobile Recharge": {
-          "title": "Online mobile recharge",
-          "images": "https://www.99paisa.in/images/best-mobile-recharge-api.jpg",
-          "link": "https://paytm.com/recharge",
-          "description": "Vodafone Recharge Online|Airtel Recharge Online|Aircel Recharge Online|Idea Recharge Online|BSNL Recharge Online|Reliance GSM Recharge Online|MTS Recharge Online|MTNL Recharge Online|Tata Docomo GSM Recharge Online|Uninor/Telenor Recharge Online"
+        	"title": "Online mobile recharge",
+        	"images": "https://www.99paisa.in/images/best-mobile-recharge-api.jpg",
+        	"link": "https://paytm.com/recharge",
+        	"description": "Vodafone Recharge Online|Airtel Recharge Online|Aircel Recharge Online|Idea Recharge Online|BSNL Recharge Online|Reliance GSM Recharge Online|MTS Recharge Online|MTNL Recharge Online|Tata Docomo GSM Recharge Online|Uninor/Telenor Recharge Online"
         },
         "DTH Recharge": {
-          "title": "DTH Recharge",
-          "images": "https://www.quickrecharge.in/images2015/dth_tab_banner.jpg",
-          "link": "https://paytm.com/dth-recharge",
-          "description": "Airtel DTH Recharge|Videocon DTH Recharge|Dish TV Recharge|Tata Sky Recharge|Reliance DTH Recharge|Sundirect Recharge"
+        	"title": "DTH Recharge",
+        	"images": "https://www.quickrecharge.in/images2015/dth_tab_banner.jpg",
+        	"link": "https://paytm.com/dth-recharge",
+        	"description": "Airtel DTH Recharge|Videocon DTH Recharge|Dish TV Recharge|Tata Sky Recharge|Reliance DTH Recharge|Sundirect Recharge"
         },
         "Datacard Recharge": {
-          "title": "Online Mobile Recharge",
-          "images": "http://inetrecharge.in/images/data1/images/s1.jpg",
-          "link" : "https://paytm.com/datacard-recharge",
-          "description": "BSNL Datacard Recharge|Reliance Netconnect Datacard Recharge|Tata Photon+ Datacard Recharge|Tata Photon Whiz Datacard Recharge|MTS Mbrowse Datacard Recharge|MTS Mblaze Datacard Recharge|MTNL Datacard Recharge|Airtel Datacard Recharge|Vodafone Datacard Recharge|Aircel Datacard Recharge"
+        	"title": "Online Mobile Recharge",
+        	"images": "http://inetrecharge.in/images/data1/images/s1.jpg",
+        	"link" : "https://paytm.com/datacard-recharge",
+        	"description": "BSNL Datacard Recharge|Reliance Netconnect Datacard Recharge|Tata Photon+ Datacard Recharge|Tata Photon Whiz Datacard Recharge|MTS Mbrowse Datacard Recharge|MTS Mblaze Datacard Recharge|MTNL Datacard Recharge|Airtel Datacard Recharge|Vodafone Datacard Recharge|Aircel Datacard Recharge"
         },
         "landline Bill Payment": {
-          "title": "Online landline Bill Payment",
-          "images": "http://incrediblemp.com/uploads/blogpost/7/broadband.jpg",
-          "link": "https://paytm.com/landline-bill-payment",
-          "description": "Airtel Landline Bill Payment|Connect Broadband Landline Bill Payment|MTS Landline Bill Payment|Reliance Landline Bill Payment"
+        	"title": "Online landline Bill Payment",
+        	"images": "http://incrediblemp.com/uploads/blogpost/7/broadband.jpg",
+        	"link": "https://paytm.com/landline-bill-payment",
+        	"description": "Airtel Landline Bill Payment|Connect Broadband Landline Bill Payment|MTS Landline Bill Payment|Reliance Landline Bill Payment"
         },
         "Electricity Bill Payment": {
-          "title": "Online Electricity Bill Payment",
-          "images": "http://www.cescoorissa.com/images/onlinebill.jpg",
-          "link": "https://paytm.com/electricity-bill-payment",
-          "description": "UHBVN Bill Pay|BESCOM Electricity Bill Payment|BSES Rajdhani Bill Payment|CESC Electricity Bill Payment|NPCL Bill Payment|North Bihar Power Distribution Bill Payment|SNDL Nagpur Bill Payment|TATA Power DDL Bill Payment|Torrent Power Limited Bill Payment|Uttar Pradesh Power Corporation Ltd. Bill Payment|South Bihar Power Distribution Bill"
+        	"title": "Online Electricity Bill Payment",
+        	"images": "http://www.cescoorissa.com/images/onlinebill.jpg",
+        	"link": "https://paytm.com/electricity-bill-payment",
+        	"description": "UHBVN Bill Pay|BESCOM Electricity Bill Payment|BSES Rajdhani Bill Payment|CESC Electricity Bill Payment|NPCL Bill Payment|North Bihar Power Distribution Bill Payment|SNDL Nagpur Bill Payment|TATA Power DDL Bill Payment|Torrent Power Limited Bill Payment|Uttar Pradesh Power Corporation Ltd. Bill Payment|South Bihar Power Distribution Bill"
         },
         "Gas Bill Payment": {
-          "title": "Online Gas Bill Payment",
-          "images": "http://www.firstreporternow.com/wp-content/uploads/2016/01/Paytm-Gas-Bill-Payment-Coupons-Cashback-Promo-Codes-383x600.jpg",
-          "link": "https://paytm.com/gas-bill-payment",
-          "description": "Mahanagar Gas Bill Payment|Adani Gas Limited Bill Payment|Siti Energy Ltd Gas Bill Payment"
+        	"title": "Online Gas Bill Payment",
+        	"images": "http://www.firstreporternow.com/wp-content/uploads/2016/01/Paytm-Gas-Bill-Payment-Coupons-Cashback-Promo-Codes-383x600.jpg",
+        	"link": "https://paytm.com/gas-bill-payment",
+        	"description": "Mahanagar Gas Bill Payment|Adani Gas Limited Bill Payment|Siti Energy Ltd Gas Bill Payment"
         },
         "Metro Card Recharge": {
-          "title": "Online Metro Recharge",
-          "images": "https://www.dmrcsmartcard.com/images/travelcard.png",
-          "link": "https://paytm.com/metro-card-recharge",
-          "description": "Delhi Metro Card Recharge|Mumbai Metro Card Recharge"
+        	"title": "Online Metro Recharge",
+        	"images": "https://www.dmrcsmartcard.com/images/travelcard.png",
+        	"link": "https://paytm.com/metro-card-recharge",
+        	"description": "Delhi Metro Card Recharge|Mumbai Metro Card Recharge"
         },
         "Water Bill Payment": {
-          "title": "Online Water Bill Payment",
-          "images": "http://www.mccrearywater.com/img/Pay%20Bill%20Icon.jpg",
-          "link": "https://paytm.com/water-bill-payment",
-          "description": "Delhi Jal Board (DJB) Water Bill Payment|Aurangabad Water Bill Payment"
+        	"title": "Online Water Bill Payment",
+        	"images": "http://www.mccrearywater.com/img/Pay%20Bill%20Icon.jpg",
+        	"link": "https://paytm.com/water-bill-payment",
+        	"description": "Delhi Jal Board (DJB) Water Bill Payment|Aurangabad Water Bill Payment"
         },
         "Insurance premium Payment": {
-          "title": "Online Insurance Bill Payment",
-          "images": "https://www.billdesk.com/axains/images/online-premium-payment.jpg",
-          "link": "https://paytm.com/pay-insurance-premium",
-          "description": "ICICI Prudential Life Insurance Premium Payment|SBI General Insurance Limited Premium Payment|Reliance Life Insurance Premium Payment|TATA AIA Life Insurance Premium Payment|Reliance General Insurance Premium Payment|Religare Health Insurance Premium Payment|IndiaFirst Life Insurance Premium Payment"
+        	"title": "Online Insurance Bill Payment",
+        	"images": "https://www.billdesk.com/axains/images/online-premium-payment.jpg",
+        	"link": "https://paytm.com/pay-insurance-premium",
+        	"description": "ICICI Prudential Life Insurance Premium Payment|SBI General Insurance Limited Premium Payment|Reliance Life Insurance Premium Payment|TATA AIA Life Insurance Premium Payment|Reliance General Insurance Premium Payment|Religare Health Insurance Premium Payment|IndiaFirst Life Insurance Premium Payment"
         },
         "Amusement Park Tickets": {
-          "title": "Online Amusement Park Tickets",
-          "images": "http://www.pluggingandplaying.com/wp-content/uploads/2016/05/adventureislandsign.jpg",
-          "link": "https://paytm.com/entertainment/amusement-parks",
-          "description": "Water Parks in Delhi|Water Parks in Pune|Theme Parks in Mumbai|Theme Parks in Chennai|Water Parks in Lucknow"
+        	"title": "Online Amusement Park Tickets",
+        	"images": "http://www.pluggingandplaying.com/wp-content/uploads/2016/05/adventureislandsign.jpg",
+        	"link": "https://paytm.com/entertainment/amusement-parks",
+        	"description": "Water Parks in Delhi|Water Parks in Pune|Theme Parks in Mumbai|Theme Parks in Chennai|Water Parks in Lucknow"
         },
         "Book Hotels": {
-          "title": "Online Hotels booking",
-          "images": "http://www.excellentour.in/images/banner3.jpg",
-          "link": "https://paytm.com/hotels",
-          "description": "Nainital Hotels|Shimla Hotels|Kodaikanal Hotels|Coorg Hotels|Mumbai Hotels|Pune Hotels|Goa Hotels|Hyderabad Hotels|Delhi Hotels|Jaipur Hotels|Mussoorie Hotels|Srinagar Hotels"
+        	"title": "Online Hotels booking",
+        	"images": "http://www.excellentour.in/images/banner3.jpg",
+        	"link": "https://paytm.com/hotels",
+        	"description": "Nainital Hotels|Shimla Hotels|Kodaikanal Hotels|Coorg Hotels|Mumbai Hotels|Pune Hotels|Goa Hotels|Hyderabad Hotels|Delhi Hotels|Jaipur Hotels|Mussoorie Hotels|Srinagar Hotels"
         },
         "Book Movie Tickets": {
-          "title": "Online  Movie Tickets booking",
-          "images": "http://www.allindiascoop.com/wp-content/uploads/2015/09/movie-tickets.png",
-          "link": "https://paytm.com/movies",
-          "description": "Movies in Hyderabad|Movies in Chandigarh|Movies in Chennai|Movies in Pune|Movies in Ahmedabad|Movies in Kolkata|Movies in Vijayawada|Movies in Delhi|Movies in Vizag|Movies in Madurai|Movies in Thrissur"
+        	"title": "Online  Movie Tickets booking",
+        	"images": "http://www.allindiascoop.com/wp-content/uploads/2015/09/movie-tickets.png",
+        	"link": "https://paytm.com/movies",
+        	"description": "Movies in Hyderabad|Movies in Chandigarh|Movies in Chennai|Movies in Pune|Movies in Ahmedabad|Movies in Kolkata|Movies in Vijayawada|Movies in Delhi|Movies in Vizag|Movies in Madurai|Movies in Thrissur"
         },
         "Book Bus Tickets": {
-          "title": "Online Bus Tickets booking",
-          "images": "http://images.projectsgeek.com/2016/02/Bus-Booking-System.jpg",
-          "link": "https://paytm.com/movies",
-          "description": "Chennai to Bangalore Bus|Hyderabad to Bangalore Bus|Bangalore to Hyderabad Bus|Bangalore to Chennai Bus|Mumbai to Pune Bus|Pune to Shirdi Bus|Hyderabad to Goa Bus|Mumbai to Hyderabad Bus|Pune to Indore Bus|Indore to Bhopal Bus|Chennai to Coimbatore Bus|Chennai to Hyderabad Bus"
+        	"title": "Online Bus Tickets booking",
+        	"images": "http://images.projectsgeek.com/2016/02/Bus-Booking-System.jpg",
+        	"link": "https://paytm.com/movies",
+        	"description": "Chennai to Bangalore Bus|Hyderabad to Bangalore Bus|Bangalore to Hyderabad Bus|Bangalore to Chennai Bus|Mumbai to Pune Bus|Pune to Shirdi Bus|Hyderabad to Goa Bus|Mumbai to Hyderabad Bus|Pune to Indore Bus|Indore to Bhopal Bus|Chennai to Coimbatore Bus|Chennai to Hyderabad Bus"
         }
       }
-    ]
-  ,
-  "FAQ": {
+    ],
     "Sign_up": [
       {
-        "1": "I don’t have an account on Paytm. Can I still recharge?:You would need to create an account to recharge. At Paytm we strive to make your life simpler. We have 2 second registration process which you can breeze through while selecting your recharge details and coupons",
-        "2": "Why do I need to Sign Up to use Paytm Marketplace?:Signing Up has its advantage. You can View your all your past orders and transactions on Paytm. Manage and edit your personal information like your billing and shipping address. Track and check the status of your orders.Cancel orders or items from a particular order.Download a detailed receipt of all your transactions or orders on Paytm.Add money to Paytm Wallet which enables super fast recharges and order placements.Be a part of our contests and special deals, get free coupons and enjoy member benefits.",
-        "3": "How do I sign up to shop, recharge or pay my bills on Paytm?:Click on the ‘Cart’ icon and go to click on the top panel that says ‘Hello!’.Go to ‘Create Account’, fill in your details.Click on ‘Create account’ and you’re good to go!.",
-        "4": "Can I use the same Paytm accountfor my recharges and buying or selling?:Of course you can. We like to keep things simple and the best part is you can avail of all of this under one roof with just a single account."
+        "1": "I don’t have an account on Paytm. Can I still recharge? (account nahi hai paytm par,bina account ke recharge kar sakta hu) :You would need to create an account to recharge. At Paytm we strive to make your life simpler. We have 2 second registration process which you can breeze through while selecting your recharge details and coupons",
+        "2": "Why do I need to Sign Up to use Paytm Marketplace? (Marketplace ke liye sign up kyu karu,kyu karu sign up Marketplace par) :Signing Up has its advantage. You can View your all your past orders and transactions on Paytm. Manage and edit your personal information like your billing and shipping address. Track and check the status of your orders.Cancel orders or items from a particular order.Download a detailed receipt of all your transactions or orders on Paytm.Add money to Paytm Wallet which enables super fast recharges and order placements.Be a part of our contests and special deals, get free coupons and enjoy member benefits.",
+        "3": "How do I sign up to shop, recharge or pay my bills on Paytm? (Paytm par kase sign up karte hai,paytm par signup bata yr) :Click on the ‘Cart’ icon and go to click on the top panel that says ‘Hello!’.Go to ‘Create Account’, fill in your details.Click on ‘Create account’ and you’re good to go!.",
+        "4": "Can I use the same Paytm account for my recharges and buying or selling? (same paytm account ko recharge aur buy ke liye use kar sakta, ek he account se buy or sell hoga) :Of course you can. We like to keep things simple and the best part is you can avail of all of this under one roof with just a single account."
       },
       {
-        "1": "I want to change my registered email address?:Click on the cart icon on the top-right and go to ‘Settings’.Go to ‘Edit’ on the top right corner.Edit your email address and click on the ‘Save’ option on the top right.",
-        "2": "How can I change my password?:Click on the cart icon on the top-right and go to ‘Settings’.Click on ‘Change Password’.Enter your current and new password and ‘Save’ it.",
-        "3": "How do I change my registered mobile number?:Click on the cart icon on the top-right and go to ‘Settings’.Go to ‘Edit’ on the top right corner.Edit your mobile number and click on the ‘Save’ option on the top right.",
-        "4": "I want to add or change my registered billing/shipping address?:Click on the cart icon on the top right and go to ‘Settings’.Click on ‘Shipping Address’ and go to ‘Add new address’ at the bottom of the screen.Enter your address and ‘Save & continue’.",
-        "5": "Can I add more than one delivery address?:Yes you can add multiple shipping or delivery addresses.",
-        "6": "I’ve forgotten my password. What do I do?:Click on the ‘Cart’ icon on the top right.Click on ‘Hello!’ and then again on ‘Forgot Password?’.Enter your registered email address or mobile number.Click on the link sent to email to reset your password.",
-        "7": "How do I verify my email id and phone number?:https://paytm.com/blog/verify-mobile-number-email-address-to-get-cash-back/#more-5107"
+        "1": "I want to change my registered email address? (email change karne hai,email kase change karu, email change kar) :Click on the cart icon on the top-right and go to ‘Settings’.Go to ‘Edit’ on the top right corner.Edit your email address and click on the ‘Save’ option on the top right.",
+        "2": "How can I change my password? (password kase change karu,password badalna hai,password change kar) :Click on the cart icon on the top-right and go to ‘Settings’.Click on ‘Change Password’.Enter your current and new password and ‘Save’ it.",
+        "3": "How do I change my registered mobile number? (mobile number change karna hai,mobile no. badal de yr) :Click on the cart icon on the top-right and go to ‘Settings’.Go to ‘Edit’ on the top right corner.Edit your mobile number and click on the ‘Save’ option on the top right.",
+        "4": "I want to add or change my registered billing/shipping address? (address badal na hai,address change kar de,address badalna hai) :Click on the cart icon on the top right and go to ‘Settings’.Click on ‘Shipping Address’ and go to ‘Add new address’ at the bottom of the screen.Enter your address and ‘Save & continue’.",
+        "5": "Can I add more than one delivery address? (ek se zyada delivery address daal sakta hu kya,2 email address daal sakta kya) :Yes you can add multiple shipping or delivery addresses.",
+        "6": "I’ve forgotten my password. What do I do? (password bhool gaya me,password ghoom goya yr,password bhool gaya kya karu) :Click on the ‘Cart’ icon on the top right.Click on ‘Hello!’ and then again on ‘Forgot Password?’.Enter your registered email address or mobile number.Click on the link sent to email to reset your password.",
+        "7": "How do I verify my email id and phone number? (email or no. verify kase karu,email aur number verify karna hai) :https://paytm.com/blog/verify-mobile-number-email-address-to-get-cash-back/#more-5107"
       }
     ],
     "Recharges": [
       {
-        "1": "Do I have to pay extra charges for using Paytm?:All services on Paytm are free.",
-        "2": "How can I recharge my mobile or pay my postpaid bill?:Enter your mobile number, operator’s name and the recharge/bill value.Then key in your Paytm password (or if visiting for the first time, create a password).Finally, select your payment method (credit card, debit card, Internet banking, ATM card).",
-        "3": "Can I recharge on the go without using data connection of my phone?:Yes just call our toll free number 1800-1800-1234 anytime.Please ensure your account has sufficient Paytm Wallet balance to cover recharge.",
-        "4": "My recharge was successful, but I have not yet received my recharge?:All recharge requests are processed immediately on Paytm.Still, in a case when you do not receive a confirmation of recharge from your Operator then you can always reach out to us at paytm.com/care.",
-        "5": "I have switched my operator through MNP. How can I now get a recharge done?:Enter the mobile number.Select your current operator (if it’s showing your previous operator).Enter recharge value.Enter your Paytm password (or create a password if visiting for the first time).Select your payment method (credit card, debit card, Internet banking)."
+        "1": "Do I have to pay extra charges for using Paytm? (extra kharcha kuch,koi aur faltu ka kharcha) :All services on Paytm are free.",
+        "2": "How can I recharge my mobile or pay my postpaid bill? (mobile ka recharge aur postpaid kase bharna hai,postpaid bill bharna hai) :Enter your mobile number, operator’s name and the recharge/bill value.Then key in your Paytm password (or if visiting for the first time, create a password).Finally, select your payment method (credit card, debit card, Internet banking, ATM card).",
+        "3": "Can I recharge on the go without using data connection of my phone? (bina net ke recharge hoga?,net ke bina recharge ho paega kya) :Yes just call our toll free number 1800-1800-1234 anytime.Please ensure your account has sufficient Paytm Wallet balance to cover recharge.",
+        "4": "My recharge was successful, but I have not yet received my recharge? (recharge karne par balance nahi aya,recharge done still no balance) :All recharge requests are processed immediately on Paytm.Still, in a case when you do not receive a confirmation of recharge from your Operator then you can always reach out to us at paytm.com/care.",
+        "5": "I have switched my operator through MNP. How can I now get a recharge done? (MNP se mobile number change kara tha recharge kase karu) :Enter the mobile number.Select your current operator (if it’s showing your previous operator).Enter recharge value.Enter your Paytm password (or create a password if visiting for the first time).Select your payment method (credit card, debit card, Internet banking)."
       },
       {
-        "1": "I don’t know recharge plans of my operator, help!:Just enter your mobile number and click on “Browse plans” in amount textbox.",
-        "2": "How will I get to know whether my recharge transaction has been successful?:Once you complete your three-step process of mobile recharging on Paytm.com, you will receive the following from us.Immediate response on your screen.Receipt in an email. SMS on your mobile . SMS from your operator with recharge details.",
-        "3": "My recharge or bill payment appears “Queued”. What does this mean?:his means your payment for recharge or bill payment was successfully submitted. However your operator is yet to process this payment.",
-        "4": "When I was doing the recharge on Paytm.com, I got a response that my recharge was unsuccessful. What does this mean?:This could be due to the below mentioned reasons.Your mobile operator’s server was temporarily down.The entered amount was not accepted by your mobile operator as a valid recharge value.There was a temporary network issue and we were not able to connect your request to mobile operator."
+        "1": "I don’t know recharge plans of my operator, help! (operator ke plans nahi pata plan bata,Airtel ke plans bataiyo,Vodafone ke plans bataiyo,Airtel ke plans de) :Just enter your mobile number and click on “Browse plans” in amount textbox.",
+        "2": "How will I get to know whether my recharge transaction has been successful? (recharge hua ke nahi kase pata karu,recharge hua,yr recharge hua ke nahi) :Once you complete your three-step process of mobile recharging on Paytm.com, you will receive the following from us.Immediate response on your screen.Receipt in an email. SMS on your mobile . SMS from your operator with recharge details.",
+        "3": "My recharge or bill payment appears “Queued”. What does this mean? (ye “Queued” kya hai,“Queued” matlab,ye “Queued” ka kya issue hai) :his means your payment for recharge or bill payment was successfully submitted. However your operator is yet to process this payment.",
+        "4": "When I was doing the recharge on Paytm.com, I got a response that my recharge was unsuccessful. What does this mean? (recharge unsuccessful hua) :This could be due to the below mentioned reasons.Your mobile operator’s server was temporarily down.The entered amount was not accepted by your mobile operator as a valid recharge value.There was a temporary network issue and we were not able to connect your request to mobile operator."
       },
       {
-        "1": "Why was the recharge amount I entered not accepted at Paytm.com?:Operators decide the valid recharge denominations circle-wise and they keep changing it from time to time. Talk time and special recharge value are dependent entirely on the operator. Do not miss the drop-down menu “Click on “Browse plans” to view indicative plans”.",
-        "2": "I got zero talk time or less than expected talk time!:The talk time that you receive after doing a recharge on Paytm.com is defined by the mobile operator and we have no control over it."
+        "1": "Why was the recharge amount I entered not accepted at Paytm.com?(recharge amt accept nahi hua,recharge amt not accepted,recharge amount accept nahi hua) :Operators decide the valid recharge denominations circle-wise and they keep changing it from time to time. Talk time and special recharge value are dependent entirely on the operator. Do not miss the drop-down menu “Click on “Browse plans” to view indicative plans”.",
+        "2": "I got zero talk time or less than expected talk time! (jitne ka talktime dala tha us se kam aya hai,poora talktime nahi aya,galat dikha raha hai talktime) :The talk time that you receive after doing a recharge on Paytm.com is defined by the mobile operator and we have no control over it."
       },
       {
-        "1": "Can I also recharge using mobile web?:Absolutely yes! You can simply type Paytm.com on your mobile browser and you will be able to proceed to Recharge."
+        "1": "Can I also recharge using mobile web? (mobile se Paytm ke site pe recharge kar sakta hu,site se recharge kar sakta hu kya?) :Absolutely yes! You can simply type Paytm.com on your mobile browser and you will be able to proceed to Recharge."
       }
     ],
     "Bills": [
       {
-        "1": "What bills can I pay on Paytm?:On Paytm you can pay bills for your postpaid mobile and landline numbers,your postpaid datacards, electricity connections and also gas connections.",
-        "2": "What are the postpaid mobile bills that I can pay through Paytm?:You can pay postpaid mobile bills for all operators and in all circles across India.",
-        "3": "What landline bills can I pay through Paytm?:You can pay Airtel bills of all circles, MTNL Delhi, and Tata Teleservices bills on Paytm.",
-        "4": "What are the postpaid Datacard bills that I can pay through Paytm?:You can pay postpaid datacard bills for all operators and in all circles across India.",
-        "5": "Do you charge any extra fee for bill payment?:No way! Just pay the amount due as per your bill and nothing more.",
-        "6": "What are the Electricity Bill Payments I can make through Paytm?:BSES Yamuna, Reliance Energy, MSEB Mumbai, BEST Mumbai, NDPL, BSES Yamuna, BSES Rajdhani, Uttar Haryana Bijli Vitran Nigam, Dakshin Haryana Bijli Vitran Nigam,North & South Bihar electricity(including Jharkhand), BESCOM Bengaluru, CESCOM Mysore, CESC Calcutta.",
-        "7": "Do I have to register for electricity bills?:No, just navigate to Paytm.com/billpay and click on electricity tab, select your electricity board and enter connection details.",
-        "8": "Does my electricity bill get paid instantly?:All electricity boards take 2 working days to process any bill payment.",
-        "9": "Can I make partial payment of electricity bills?:No you must make complete payment of your due amount.",
-        "10": "Is there a maximum payment limit for electricity bills?:For now you can pay bills upto a maximum of Rs 8000.",
-        "11": "What are the Gas bills that I can pay on Paytm?:You can pay your Indiraprastha Gas limited-Delhi and Mahanagar Gas-Mumbai bills on Paytm."
+        "1": "What bills can I pay on Paytm? (kis prakar ke bills paytm par bhar sakte hai,bill types,kaun kaun se bills bhar sakte hai paytm par) :On Paytm you can pay bills for your postpaid mobile and landline numbers,your postpaid datacards, electricity connections and also gas connections.",
+        "2": "What are the postpaid mobile bills that I can pay through Paytm? (kaun kaun se mobile operators ke postpaid bill bhar sakta hu?,postpaid ka bill bhar sakta kya?) :You can pay postpaid mobile bills for all operators and in all circles across India.",
+        "3": "What landline bills can I pay through Paytm? (landline bill bhar skate hai kya?,kis kis ke landline bills bhar sakta hu) :You can pay Airtel bills of all circles, MTNL Delhi, and Tata Teleservices bills on Paytm.",
+        "4": "What are the postpaid Datacard bills that I can pay through Paytm?(kaunse postpaid bills bhar sakte hai) :You can pay postpaid datacard bills for all operators and in all circles across India.",
+        "5": "Do you charge any extra fee for bill payment? (bill bharne ke koi charges,extra charges to nahi hai koi?) :No way! Just pay the amount due as per your bill and nothing more.",
+        "6": "What are the Electricity Bill Payments I can make through Paytm? (Bijli ke bill bhar sakte hai,kaun kaun se Bijli ke bill bhar sakte hai,electricity bills bhar sakta hu kya) :BSES Yamuna, Reliance Energy, MSEB Mumbai, BEST Mumbai, NDPL, BSES Yamuna, BSES Rajdhani, Uttar Haryana Bijli Vitran Nigam, Dakshin Haryana Bijli Vitran Nigam,North & South Bihar electricity(including Jharkhand), BESCOM Bengaluru, CESCOM Mysore, CESC Calcutta.",
+        "7": "Do I have to register for electricity bills? (Bijli ka bill bharne ke liye register karna padega kya,register karna zaroori hai kya bill bharne ke liye) :No, just navigate to Paytm.com/billpay and click on electricity tab, select your electricity board and enter connection details.",
+        "8": "Does my electricity bill get paid instantly? (Bijli ka bill kya ekdum bhar jata hai,electricity bill ek dum bhar jata hai kya?,bill ekdum jama ho jata hai kya) :All electricity boards take 2 working days to process any bill payment.",
+        "9": "Can I make partial payment of electricity bills? (kishto me bill bhar sakte hai kya,Bijli ka bill kishto me bhar sakte hai kya,adha bill bhar sakte hai kya) :No you must make complete payment of your due amount.",
+        "10": "Is there a maximum payment limit for electricity bills? (max kitne ka bill bhar sakte hai,maximum kitna bill ja sakta hai,kitne tak ka bijli ke bill bhar sakte hai) :For now you can pay bills upto a maximum of Rs 8000.",
+        "11": "What are the Gas bills that I can pay on Paytm? (gas ke bills bhar sakte hai kya) :You can pay your Indiraprastha Gas limited-Delhi and Mahanagar Gas-Mumbai bills on Paytm."
       }
     ],
     "Bus": [
       {
-        "1": "How do I book a bus ticket?:Enter the city you want to board the bus from.Enter the city you want to go to.Enter the date you want to board the bus on.Enter the number of people you want to book bus tickets for.Once you click on ‘Search Buses’, a list of bus options come up.Choose the one most feasible for you and click on the amount to proceed.Select your seats on the bus and click on ‘Proceed to Pay’.Enter the passenger & contact details.Select your mode of payment and click on ‘Proceed to Pay’.Enter your card/ banking details and click on ‘Pay Now’ and you’re done.",
-        "2": "How do I print my ticket?:Under ‘Bus Tickets’, enter your Paytm ticket ID in the box next to ‘Check Ticket Status’.Click on the ‘Print Ticket’ option to get a printout of your ticket.",
-        "3": "Can I make changes to my ticket once booked?:Sorry, once your ticket has been booked you cannot alter any details."
+        "1": "How do I book a bus ticket? (bus ticket kase book karte hai?, bus ke ticket book karne hai) :Enter the city you want to board the bus from.Enter the city you want to go to.Enter the date you want to board the bus on.Enter the number of people you want to book bus tickets for.Once you click on ‘Search Buses’, a list of bus options come up.Choose the one most feasible for you and click on the amount to proceed.Select your seats on the bus and click on ‘Proceed to Pay’.Enter the passenger & contact details.Select your mode of payment and click on ‘Proceed to Pay’.Enter your card/ banking details and click on ‘Pay Now’ and you’re done.",
+        "2": "How do I print my ticket? (ticket kase print karu,ticket print karne hai,print my ticket,ticket print kar) :Under ‘Bus Tickets’, enter your Paytm ticket ID in the box next to ‘Check Ticket Status’.Click on the ‘Print Ticket’ option to get a printout of your ticket.",
+        "3": "Can I make changes to my ticket once booked? (ticket me koi changes kar sakte hai kya,ek bar book kar lete hai to kya change kar sakte hai kya) :Sorry, once your ticket has been booked you cannot alter any details."
       },
       {
-        "1": "How do I cancel a ticket?:Under ‘Bus Tickets’, enter your Paytm ticket ID in the box next to ‘Check Ticket Status’.Enter the email address and mobile number which you entered while booking the tickets and click on ‘Cancel ticket’.",
-        "2": "How do I know if my ticket has been cancelled?:Go to ‘Bus Tickets’ on Paytm.com and enter your Paytm ticket ID in the box next to ‘Check Ticket Status’.If cancelled, there will be an alert at the top stating your ticket has been cancelled.",
-        "3": "I cancelled my ticket. How much of refund can I expect after cancellation charges?:Cancellation charges are calculated on the actual fare of the ticket.If any discount coupons/promo codes were used while booking your ticket, the discounted amount would be taken in to account while calculating the final refund amount."
+        "1": "How do I cancel a ticket? (ticket kase cancel karte hai,ticket cancel kar,cancel my ticket) :Under ‘Bus Tickets’, enter your Paytm ticket ID in the box next to ‘Check Ticket Status’.Enter the email address and mobile number which you entered while booking the tickets and click on ‘Cancel ticket’.",
+        "2": "How do I know if my ticket has been cancelled? (kya karu agar ticket cancel ho gayi hai,ticket apne aap cancel ho gayi hai) :Go to ‘Bus Tickets’ on Paytm.com and enter your Paytm ticket ID in the box next to ‘Check Ticket Status’.If cancelled, there will be an alert at the top stating your ticket has been cancelled.",
+        "3": "I cancelled my ticket. How much of refund can I expect after cancellation charges? (ticket cancel hone par kitne tak ka refund mil sakta hai,kitna refund milega ticket cancellation par) :Cancellation charges are calculated on the actual fare of the ticket.If any discount coupons/promo codes were used while booking your ticket, the discounted amount would be taken in to account while calculating the final refund amount."
       }
     ],
     "Wallet": [
