@@ -23,6 +23,8 @@ def logg(mess,meta='log',symbol='#'):
 
 def index(request):
     #set_greeting_text()
+    whitelist_domain()
+    set_persistent_menu()
     post_facebook_message('100006427286608','mango')
     output_content = faq_search()
     #scrape_spreadsheet()
@@ -80,6 +82,56 @@ def set_greeting_text():
     status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=greeting_object)
     pprint(status.json())
 
+def set_persistent_menu():
+    post_message_url = "https://graph.facebook.com/v2.6/me/thread_settings?access_token=%s"%PAGE_ACCESS_TOKEN
+    
+    menu_object = {
+            "setting_type" : "call_to_actions",
+            "thread_state" : "existing_thread",
+            "call_to_actions":[
+                {
+                    "type":"postback",
+                    "title":"Help",
+                    "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_HELP"
+                },
+                {
+                    "type":"postback",
+                    "title":"Start a New Order",
+                    "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_START_ORDER"
+                },
+                {
+                    "type":"web_url",
+                    "title":"Checkout",
+                    "url":"https://github.com",
+                    "webview_height_ratio": "full",
+                    "messenger_extensions": True
+                },
+                {
+                    "type":"web_url",
+                    "title":"View Website",
+                    "url":"http://petersapparel.parseapp.com/"
+                }
+            ]
+    }
+    menu_object = json.dumps(menu_object)
+    status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=menu_object)
+    logg(status.json(),symbol='---**---')
+    pprint(status.json())
+
+def whitelist_domain(domain='https://github.com'):
+    post_message_url = "https://graph.facebook.com/v2.6/me/thread_settings?access_token=%s"%PAGE_ACCESS_TOKEN
+    
+    whitelist_object = {
+      "setting_type" : "domain_whitelisting",
+      "whitelisted_domains" : [domain],
+      "domain_action_type": "add"
+    }
+    whitelist_object = json.dumps(whitelist_object)
+    status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=whitelist_object)
+    logg(status.json(),symbol='---WW---')
+    pprint(status.json())
+
+
 def faq_search(search_string ='order'):
     with open('faq.json') as data_file:    
         data = json.load(data_file)
@@ -115,7 +167,7 @@ def gen_array_response(fbid,item_arr):
 
         share_button = {"type":"element_share"} 
         button_arr.append(share_button)
-        
+
         sub_item = {
                         "title":i['title'],
                         "item_url":i['item_url'],
