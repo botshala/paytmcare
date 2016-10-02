@@ -113,6 +113,9 @@ def gen_array_response(fbid,item_arr):
                           }
             button_arr.append(button_item)
 
+        share_button = {"type":"element_share"} 
+        button_arr.append(share_button)
+        
         sub_item = {
                         "title":i['title'],
                         "item_url":i['item_url'],
