@@ -145,8 +145,10 @@ def post_facebook_message(fbid, recevied_message):
     response_text = faq_search(search_string=recevied_message)
 
     response_msg = json.dumps({"recipient":{"id":fbid}, "message":{"text":response_text}})
-    response_msg = get_offer_object(fbid)
-    logg(response_msg,'$$$$$')
+
+    if recevied_message in 'offers,offer,cashback,coupons'.split(','):
+        response_msg = get_offer_object(fbid)
+
     status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg)
 
 class BotView(generic.View):
