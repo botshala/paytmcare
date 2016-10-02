@@ -24,7 +24,7 @@ def logg(mess,meta='log',symbol='#'):
 def index(request):
     #set_greeting_text()
     handle_postback('asdasd','asd')
-    whitelist_domain()
+    #whitelist_domain()
     set_persistent_menu()
     post_facebook_message('100006427286608','mango')
     output_content = faq_search()
@@ -114,11 +114,6 @@ def set_persistent_menu():
                     "type":"postback",
                     "title":"Download App",
                     "payload":"DOWNLOAD"
-                },
-                {
-                    "type":"postback",
-                    "title":"About PayTM",
-                    "payload":"ABOUT"
                 }
             ]
     }
