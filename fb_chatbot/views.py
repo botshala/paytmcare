@@ -46,7 +46,7 @@ def get_offer_object(fbid):
         d['buttons'].append( dict(type='web_url',url=i['itemlink'],title='Claim Offer') )
         item_arr.append(d)
 
-    output_content = gen_array_response('fbid',item_arr)
+    output_content = gen_array_response(fbid,item_arr)
     return json.dumps(output_content)
 
 def scrape_spreadsheet():
