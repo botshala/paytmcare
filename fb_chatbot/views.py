@@ -12,6 +12,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 import json
 from fuzzywuzzy import process
+import random
 
 # Create your views here.
 
@@ -49,6 +50,7 @@ def get_newsletter_object(fbid):
         d['buttons'].append( dict(type='web_url',url="https://paytm.com",title='Claim Offer') )
         item_arr.append(d)
 
+    random.shuffle(item_arr)
     output_content = gen_array_response(fbid,item_arr)
     return json.dumps(output_content)
 
@@ -67,6 +69,7 @@ def get_offer_object(fbid):
         d['buttons'].append( dict(type='web_url',url=i['itemlink'],title='Claim Offer') )
         item_arr.append(d)
 
+    random.shuffle(item_arr)
     output_content = gen_array_response(fbid,item_arr)
     return json.dumps(output_content)
 
