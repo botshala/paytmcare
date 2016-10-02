@@ -1,5 +1,87 @@
 {
   "FAQ": {
+  	"one_word_query": [
+      {
+        "Mobile Recharge": {
+        	"title": "Online mobile recharge",
+        	"images": "https://www.99paisa.in/images/best-mobile-recharge-api.jpg",
+        	"link": "https://paytm.com/recharge",
+        	"description": "Vodafone Recharge Online|Airtel Recharge Online|Aircel Recharge Online|Idea Recharge Online|BSNL Recharge Online|Reliance GSM Recharge Online|MTS Recharge Online|MTNL Recharge Online|Tata Docomo GSM Recharge Online|Uninor/Telenor Recharge Online"
+        },
+        "DTH Recharge": {
+        	"title": "DTH Recharge",
+        	"images": "https://www.quickrecharge.in/images2015/dth_tab_banner.jpg",
+        	"link": "https://paytm.com/dth-recharge",
+        	"description": "Airtel DTH Recharge|Videocon DTH Recharge|Dish TV Recharge|Tata Sky Recharge|Reliance DTH Recharge|Sundirect Recharge"
+        },
+        "Datacard Recharge": {
+        	"title": "Online Mobile Recharge",
+        	"images": "http://inetrecharge.in/images/data1/images/s1.jpg",
+        	"link" : "https://paytm.com/datacard-recharge",
+        	"description": "BSNL Datacard Recharge|Reliance Netconnect Datacard Recharge|Tata Photon+ Datacard Recharge|Tata Photon Whiz Datacard Recharge|MTS Mbrowse Datacard Recharge|MTS Mblaze Datacard Recharge|MTNL Datacard Recharge|Airtel Datacard Recharge|Vodafone Datacard Recharge|Aircel Datacard Recharge"
+        },
+        "landline Bill Payment": {
+        	"title": "Online landline Bill Payment",
+        	"images": "http://incrediblemp.com/uploads/blogpost/7/broadband.jpg",
+        	"link": "https://paytm.com/landline-bill-payment",
+        	"description": "Airtel Landline Bill Payment|Connect Broadband Landline Bill Payment|MTS Landline Bill Payment|Reliance Landline Bill Payment"
+        },
+        "Electricity Bill Payment": {
+        	"title": "Online Electricity Bill Payment",
+        	"images": "http://www.cescoorissa.com/images/onlinebill.jpg",
+        	"link": "https://paytm.com/electricity-bill-payment",
+        	"description": "UHBVN Bill Pay|BESCOM Electricity Bill Payment|BSES Rajdhani Bill Payment|CESC Electricity Bill Payment|NPCL Bill Payment|North Bihar Power Distribution Bill Payment|SNDL Nagpur Bill Payment|TATA Power DDL Bill Payment|Torrent Power Limited Bill Payment|Uttar Pradesh Power Corporation Ltd. Bill Payment|South Bihar Power Distribution Bill"
+        },
+        "Gas Bill Payment": {
+        	"title": "Online Gas Bill Payment",
+        	"images": "http://www.firstreporternow.com/wp-content/uploads/2016/01/Paytm-Gas-Bill-Payment-Coupons-Cashback-Promo-Codes-383x600.jpg",
+        	"link": "https://paytm.com/gas-bill-payment",
+        	"description": "Mahanagar Gas Bill Payment|Adani Gas Limited Bill Payment|Siti Energy Ltd Gas Bill Payment"
+        },
+        "Metro Card Recharge": {
+        	"title": "Online Metro Recharge",
+        	"images": "https://www.dmrcsmartcard.com/images/travelcard.png",
+        	"link": "https://paytm.com/metro-card-recharge",
+        	"description": "Delhi Metro Card Recharge|Mumbai Metro Card Recharge"
+        },
+        "Water Bill Payment": {
+        	"title": "Online Water Bill Payment",
+        	"images": "http://www.mccrearywater.com/img/Pay%20Bill%20Icon.jpg",
+        	"link": "https://paytm.com/water-bill-payment",
+        	"description": "Delhi Jal Board (DJB) Water Bill Payment|Aurangabad Water Bill Payment"
+        },
+        "Insurance premium Payment": {
+        	"title": "Online Insurance Bill Payment",
+        	"images": "https://www.billdesk.com/axains/images/online-premium-payment.jpg",
+        	"link": "https://paytm.com/pay-insurance-premium",
+        	"description": "ICICI Prudential Life Insurance Premium Payment|SBI General Insurance Limited Premium Payment|Reliance Life Insurance Premium Payment|TATA AIA Life Insurance Premium Payment|Reliance General Insurance Premium Payment|Religare Health Insurance Premium Payment|IndiaFirst Life Insurance Premium Payment"
+        },
+        "Amusement Park Tickets": {
+        	"title": "Online Amusement Park Tickets",
+        	"images": "http://www.pluggingandplaying.com/wp-content/uploads/2016/05/adventureislandsign.jpg",
+        	"link": "https://paytm.com/entertainment/amusement-parks",
+        	"description": "Water Parks in Delhi|Water Parks in Pune|Theme Parks in Mumbai|Theme Parks in Chennai|Water Parks in Lucknow"
+        },
+        "Book Hotels": {
+        	"title": "Online Hotels booking",
+        	"images": "http://www.excellentour.in/images/banner3.jpg",
+        	"link": "https://paytm.com/hotels",
+        	"description": "Nainital Hotels|Shimla Hotels|Kodaikanal Hotels|Coorg Hotels|Mumbai Hotels|Pune Hotels|Goa Hotels|Hyderabad Hotels|Delhi Hotels|Jaipur Hotels|Mussoorie Hotels|Srinagar Hotels"
+        },
+        "Book Movie Tickets": {
+        	"title": "Online  Movie Tickets booking",
+        	"images": "http://www.allindiascoop.com/wp-content/uploads/2015/09/movie-tickets.png",
+        	"link": "https://paytm.com/movies",
+        	"description": "Movies in Hyderabad|Movies in Chandigarh|Movies in Chennai|Movies in Pune|Movies in Ahmedabad|Movies in Kolkata|Movies in Vijayawada|Movies in Delhi|Movies in Vizag|Movies in Madurai|Movies in Thrissur"
+        },
+        "Book Bus Tickets": {
+        	"title": "Online Bus Tickets booking",
+        	"images": "http://images.projectsgeek.com/2016/02/Bus-Booking-System.jpg",
+        	"link": "https://paytm.com/movies",
+        	"description": "Chennai to Bangalore Bus|Hyderabad to Bangalore Bus|Bangalore to Hyderabad Bus|Bangalore to Chennai Bus|Mumbai to Pune Bus|Pune to Shirdi Bus|Hyderabad to Goa Bus|Mumbai to Hyderabad Bus|Pune to Indore Bus|Indore to Bhopal Bus|Chennai to Coimbatore Bus|Chennai to Hyderabad Bus"
+        }
+      }
+    ],
     "Sign_up": [
       {
         "1": "I don’t have an account on Paytm. Can I still recharge?:You would need to create an account to recharge. At Paytm we strive to make your life simpler. We have 2 second registration process which you can breeze through while selecting your recharge details and coupons",
@@ -122,7 +204,7 @@
         "2": "How do I apply a Promo code?:Tap of the cart icon on the top right corner and ‘Checkout’.Enter your promo code at the bottom of the screen and ‘Apply’."
       }
     ],
-    "Coupons": [
+    "Coupans": [
       {
         "1": "Do you offer free coupons?:Yes, of course! Paytm offers many exciting coupons that give you great discounts on a wide range of sites and products.",
         "2": "What are paid coupons?:Paid coupons are premium offers from our selected partners for which we charge a nominal amount from our customers.",
