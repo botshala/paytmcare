@@ -152,7 +152,7 @@ def post_facebook_message(fbid, recevied_message):
         response_text = faq_search(search_string=recevied_message)
 
     if type(response_text) == dict:
-        response_msg_image = {
+        response_msg = {
 
                 "recipient":{
                     "id":fbid
