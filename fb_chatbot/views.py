@@ -257,7 +257,7 @@ def post_facebook_message(fbid, recevied_message):
 
 def handle_postback(fbid,payload):
     post_message_url = 'https://graph.facebook.com/v2.6/me/messages?access_token=%s'%PAGE_ACCESS_TOKEN
-    output_text = 'Payload Recieved: ' + payload
+    
     logg(payload,symbol='*')
     response_text = ''
     response_object = ''
@@ -293,9 +293,10 @@ def handle_postback(fbid,payload):
     else:
         response_object = json.dumps(response_object)
 
-    requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_object)
+    status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_object)
+    logg(status.json(),symbol='---297---')
     return
-
+    
 
 class BotView(generic.View):
     def get(self, request, *args, **kwargs):
