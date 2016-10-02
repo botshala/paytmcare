@@ -22,7 +22,7 @@ VERIFY_TOKEN = '8447789934m'
 def logg(mess,meta='log',symbol='#'):
   print '%s\n%s\n%s'%(symbol*20,mess,symbol*20)
 
-def index(request):
+def index2(request):
     #set_greeting_text()
     handle_postback('asdasd','asd')
     #whitelist_domain()
@@ -418,7 +418,10 @@ class BotView(generic.View):
                 except Exception as e:
                     logg(e,symbol='-332-')
 
-        return HttpResponse()  
+        return HttpResponse()
 
 
+def index(request):
+    context_dict = {}
+    return render(request,'fb_chatbot/index.html',context_dict)
 
