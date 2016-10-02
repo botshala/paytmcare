@@ -316,6 +316,9 @@ def handle_postback(fbid,payload):
     elif payload == 'OFFERS':
         post_facebook_message(fbid,'offers')
 
+    elif payload == 'NEWS':
+        post_facebook_message(fbid,'news')
+
     elif payload == 'DOWNLOAD':
         response_object = {
 
