@@ -32,11 +32,11 @@ def index(request):
 
     output_content = get_offer_object('fbid')
     logg(output_content,symbol='^**^')
-    output_content = scrape_spreadsheet(sheet_type='newsletter1')
+    output_content = scrape_spreadsheet(sheet_type='newsletter')
     return HttpResponse(output_content, content_type='application/json')
 
 def get_newsletter_object(fbid):
-    spread_arr = scrape_spreadsheet()
+    spread_arr = scrape_spreadsheet(sheet_type='newsletter')
     item_arr =[]
     for i in spread_arr:
         d = {}
