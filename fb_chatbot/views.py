@@ -47,7 +47,7 @@ def get_offer_object(fbid):
         item_arr.append(d)
 
     output_content = gen_array_response('fbid',item_arr)
-    return output_content
+    return json.dumps(output_content)
 
 def scrape_spreadsheet():
     offer_sheet_id = '1US5eDiy_oJkPyyvOFR8RKZCmaq2PMkPF7vgcEWloq3Y'
