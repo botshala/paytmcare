@@ -185,6 +185,7 @@ def post_facebook_message(fbid, recevied_message):
                   }
 
         }
+        response_msg = json.dumps(response_msg)
 
     else:
         response_msg = json.dumps({"recipient":{"id":fbid}, "message":{"text":response_text}})
