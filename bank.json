@@ -1,0 +1,32 @@
+{
+	"Bank_FAQ": {
+		"How is a Payments Bank different from a conventional bank?": "Payments Bank is a new bank model visualised by the Reserve Bank of India. As a Payments Bank, Paytm can now accept customer deposits upto Rs. 1 lakh per customer in a savings or current account and offer other banking services like Debit Cards, Online Banking and Mobile Banking.Payments Banks can not offer financial products of their own, but partner with other banks.",
+
+		"What are the services offered by Paytm Payments Bank?": "Paytm Payments Bank is offering savings and current accounts with a debit card and the ability to make fast and easy payments. It will soon enable you to access a range of financial services such as Insurance,Loans, Mutual Funds offered by our partner banks with the seamless Paytm experience.",
+
+		"How can I open my account?": "Currently we are inviting limited users to open an account with Paytm Payments Bank. You can request for an invite using paytmpaymentsbank.com or the latest Paytm app.",
+
+		" I see a text in my passbook about older transactions being from wallet under One97, what does this mean?": "Your Paytm Wallet has moved from One97 Communications Ltd. to Paytm Payments Bank Limited as per the directions of RBI. The transactions you see under ‘wallet issued by One97 Communications Ltd.’ are the transactions made by you before your wallet moved to the Paytm Payments Bank.",
+
+		"Will my wallet get converted into a bank account?": "No, your wallet will simply operate under the Paytm Payments Bank and continue to exist and function in the same manner as earlier. In addition to a wallet, you will now be able to open a savings or current account with us and access a wide range of financial services.",
+
+
+		"Will my wallet balance now earn interest?": "To earn interest, you will need to open a Paytm Payments Bank savings account.",
+
+		" I accept Paytm at my store, what does this mean for me?": "Your wallet continues to work the same way as before. There is no impact on your cashflows or the mode of accepting payment.",
+
+		"I am expecting a refund on a payment I made from my Paytm Wallet. What happens to the refund now?": "Your refunds will be given back to your wallet as earlier.",
+
+		"Will my old login details work?": "Yes, your Paytm login details continue to remain the same.",
+
+		"Can I now withdraw money from my wallet?": "No, withdrawing money from wallet is not allowed as per RBI policies.",
+
+		" Is it mandatory to open an account with Paytm Payments Bank once it is launched, to continue using the wallet?": "It is not mandatory to open an account with Paytm Payments Bank to use the wallet.",
+
+		"Can I move my money to any other Bank from Paytm Payments Bank Wallet?": "Yes, you would be able to send money to any bank account from your Paytm Payment Bank Wallet.",
+
+		" I already have a Paytm account. Will I automatically become a Bank customer?": "While you may be an existing Paytm user, you will need to open a Bank account separately.",
+
+		"I haven’t done my KYC. Can I get a Payments Bank account?": "Only KYC-enabled Paytm users are allowed to open a Paytm Payments Bank account."
+	}
+}
